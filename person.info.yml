@@ -1,0 +1,5 @@
+name: Person
+type: module
+description: 'Defines a person content type for use in Web Express websites.'
+package: Example modules
+core_version_requirement: ^9

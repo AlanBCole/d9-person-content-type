@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - person
+name: 'Job Type'
+vid: job_type
+description: 'Used to group people into categories such as administration, faculty, staff, etc.'
+weight: 0

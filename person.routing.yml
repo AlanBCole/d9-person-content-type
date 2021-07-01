@@ -1,0 +1,6 @@
+person.showPerson:
+  path: '/person/{nodeNumber}'
+  defaults:
+    _controller: '\Drupal\person\Controller\PersonController::showPerson'
+  requirements:
+    _permission: 'access content'

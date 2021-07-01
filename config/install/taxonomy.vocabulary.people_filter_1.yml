@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - person
+name: 'People Filter 1'
+vid: people_filter_1
+description: 'A vocabulary to filter person nodes'
+weight: 0

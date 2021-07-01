@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - person
+name: Person
+type: person
+description: 'Use person to create individual staff pages with contact info and bios'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: true
+third_party_settings: {  }

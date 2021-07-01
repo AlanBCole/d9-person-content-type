@@ -1,0 +1,131 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.person.body
+    - field.field.node.person.field_person_address
+    - field.field.node.person.field_person_department
+    - field.field.node.person.field_person_email
+    - field.field.node.person.field_person_filter_1
+    - field.field.node.person.field_person_filter_2
+    - field.field.node.person.field_person_filter_3
+    - field.field.node.person.field_person_first_name
+    - field.field.node.person.field_person_job_title
+    - field.field.node.person.field_person_job_type
+    - field.field.node.person.field_person_last_name
+    - field.field.node.person.field_person_links
+    - field.field.node.person.field_person_office_hours
+    - field.field.node.person.field_person_phone
+    - field.field.node.person.field_person_photo
+    - image.style.medium
+    - node.type.person
+  module:
+    - image
+    - link
+    - telephone
+    - text
+    - user
+id: node.person.default
+targetEntityType: node
+bundle: person
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_person_address:
+    weight: 8
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_person_department:
+    weight: 5
+    label: visually_hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_person_email:
+    weight: 6
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_person_first_name:
+    weight: 1
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_person_job_title:
+    weight: 3
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_person_last_name:
+    weight: 2
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_person_links:
+    weight: 11
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_person_office_hours:
+    weight: 9
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_person_phone:
+    weight: 7
+    label: visually_hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_person_photo:
+    weight: 4
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_person_filter_1: true
+  field_person_filter_2: true
+  field_person_filter_3: true
+  field_person_job_type: true

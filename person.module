@@ -1,0 +1,35 @@
+<?php
+/**
+ * @file
+ * Contains code for person module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function person_theme(array $existing, $type, $theme, $path) {
+  return [
+    'person_template' => [
+      'variables' => [
+        'nodeNumber' => NULL,
+        'person' => NULL,
+        'title' => NULL,
+        'firstName' => NULL,
+        'lastName' => NULL,
+        'photo' => NULL,
+        'jobTitle' => NULL,
+        'jobType' => NULL,
+        'department' => NULL,
+        'email' => NULL,
+        'phone' => NULL,
+        'address' => NULL,
+        'officeHours' => NULL,
+        'links' => NULL,
+        'bio' => NULL,
+        'filter1' => NULL,
+        'filter2' => NULL,
+        'filter3' => NULL,
+      ]
+    ]
+  ];
+}
